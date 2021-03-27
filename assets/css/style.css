@@ -9,7 +9,7 @@ body {
 }
 
 #currentDay {
-  color:red;
+  color:#ff6961;
 }
 
 textarea {
@@ -99,12 +99,10 @@ textarea {
   }
 
   .hour {
-    
     border-top: none;
   }
 
   textarea {
-
     border:none;
   }
 

@@ -44,8 +44,9 @@ function colourUpdate() {
 
 // when saveBtn is clicked store the value inside all textareas and also store their parent ID
 $(".saveBtn").click(function () {
-    var text = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
+    var text = $(this).siblings(".description").val();
+    
     // Save text in local storage
     localStorage.setItem(time, text);
 });
