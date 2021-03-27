@@ -91,7 +91,7 @@ textarea {
   }
 
   .row {
-    white-space: none;
+    /* white-space:normal; */
     height: auto;
     border-top: 1px solid white;
   }
@@ -104,10 +104,29 @@ textarea {
 
   .hour {
     border-top: none;
+    height: 50px;
+    padding-left:0;
   }
 
   textarea {
     border:none;
   }
+
+  .jumbotron {
+    border:none;
+    margin-bottom:0;
+  }
+
+  div .col-md-1 .hour {
+    padding-left:0;
+    margin-left: 0;
+  }
+
+
+  .fa-save {
+
+    margin-left:15px;
+  }
+  
 
 }
