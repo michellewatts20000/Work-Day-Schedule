@@ -38,41 +38,8 @@ function colourUpdate() {
             $(this).addClass("future");
 
         }
-
     })
-
-
 }
-
-
-
-// function colourUpdate() {
-//     // makes a current hour variable using moment
-//     var simpleTime = moment().hours();
-// console.log(simpleTime);
-//     $(".hour").each(function () {
-//         var blockTime = $(this).text().replaceAll("AM", "").replaceAll("PM", "");
-//         if (blockTime < simpleTime) {
-//             $(".time-block").removeClass("future");
-//             $(".time-block").removeClass("present");
-//             $(".time-block").addClass("past");
-//         } else if (blockTime === simpleTime) {
-//             $(".time-block").removeClass("past");
-//             $(".time-block").removeClass("future");
-//             $(".time-block").addClass("present");
-//         } else {
-//             $(".time-block").removeClass("present");
-//             $(".time-block").removeClass("past");
-//             $(".time-block").addClass("future");
-
-//         }
-
-//     })
-
-// }
-
-
-
 
 
 $(".saveBtn").click(function () {
@@ -82,8 +49,6 @@ $(".saveBtn").click(function () {
     localStorage.setItem(time, text);
     console.log(text, time);
 });
-
-
 
 
 // get local storage when page is reloaded
