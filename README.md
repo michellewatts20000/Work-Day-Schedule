@@ -1,5 +1,9 @@
 # Work-Day-Scheduler
 
+## Link to the page: https://michellewatts20000.github.io/Work-Day-Scheduler/
+
+## Link to the repo: https://github.com/michellewatts20000/Work-Day-Scheduler
+
 ## User Story
 
 ```md
