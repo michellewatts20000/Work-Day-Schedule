@@ -6,9 +6,10 @@ setInterval(time, 1000);
 colourUpdate();
 setInterval(colourUpdate, 60000);
 
-// update page with local storage values on refresh
+// update page with local storage values on page refresh
 setLS();
 
+// adds current time to #currentDay element
 function time() {
     var currentTime = moment().format("dddd, MMMM Do, h:mm:ss a");
     $("#currentDay").text(currentTime);
@@ -41,13 +42,12 @@ function colourUpdate() {
     })
 }
 
-
+// when saveBtn is clicked store the value inside all textareas and also store their parent ID
 $(".saveBtn").click(function () {
     var text = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
     // Save text in local storage
     localStorage.setItem(time, text);
-    console.log(text, time);
 });
 
 

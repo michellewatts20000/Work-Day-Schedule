@@ -4,6 +4,9 @@
 ### Link to the GitHub page is [here](https://michellewatts20000.github.io/Work-Day-Scheduler/)
 ### Link to the GitHub repo is [here](https://github.com/michellewatts20000/Work-Day-Scheduler)
 
+  ## Screenshot
+![screenshot of generator](./assets/img/screenshot.png)
+
 ## User Story
 
 ```md
