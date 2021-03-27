@@ -1,10 +1,13 @@
-//  calls the currenttime function
+//  calls the currenttime function every second
 time();
-colourUpdate();
 setInterval(time, 1000);
+
+//  calls the colour update function every 60sec
+colourUpdate();
 setInterval(colourUpdate, 60000);
 
-var simpleTime = moment().hours();
+// update page with local storage values on refresh
+setLS();
 
 function time() {
     var currentTime = moment().format("dddd, MMMM Do, h:mm:ss a");
@@ -12,60 +15,61 @@ function time() {
 }
 
 
-// checks every minute if colours need to change
+// // checks every minute if colours need to change
+// function colourUpdate() {
+//     // makes a current hour variable using moment
+//     var simpleTime = moment().hours();
+
+//     // looks at every .time-block and stores the value of its ID and then compares it to the current time and gives it a class to show if the time has passed or not
+//     $(".time-block").each(function () {
+//         var blockTime = parseInt($(this).attr("id"));
+//         if (blockTime < simpleTime) {
+//             $(this).removeClass("future");
+//             $(this).removeClass("present");
+//             $(this).addClass("past");
+//         }   else if (blockTime === simpleTime) {
+//             $(this).removeClass("past");
+//             $(this).removeClass("future");
+//             $(this).addClass("present");
+//         }
+//         else {
+//             $(this).removeClass("present");
+//             $(this).removeClass("past");
+//             $(this).addClass("future");
+
+//         }
+
+//     })
+
+
+// }
+
+
+
 function colourUpdate() {
     // makes a current hour variable using moment
     var simpleTime = moment().hours();
 
-    // looks at every .time-block and stores the value of its ID and then compares it to the current time and gives it a class to show if the time has passed or not
-    $(".time-block").each(function () {
-        var blockTime = parseInt($(this).attr("id"));
+    $(".hour").each(function () {
+        var blockTime = $(this).text().replaceAll("AM", "").replaceAll("PM", "");
         if (blockTime < simpleTime) {
-            $(this).removeClass("future");
-            $(this).removeClass("present");
-            $(this).addClass("past");
-        }   else if (blockTime === simpleTime) {
-            $(this).removeClass("past");
-            $(this).removeClass("future");
-            $(this).addClass("present");
-        }
-        else {
-            $(this).removeClass("present");
-            $(this).removeClass("past");
-            $(this).addClass("future");
+            $(".time-block").removeClass("future");
+            $(".time-block").removeClass("present");
+            $(".time-block").addClass("past");
+        } else if (blockTime === simpleTime) {
+            $(".time-block").removeClass("past");
+            $(".time-block").removeClass("future");
+            $(".time-block").addClass("present");
+        } else {
+            $(".time-block").removeClass("present");
+            $(".time-block").removeClass("past");
+            $(".time-block").addClass("future");
 
         }
 
     })
 
-
-    // if (9 < simpleTime) {
-    //     $("#hour9").addClass("past")
-    // } else if (9 > simpleTime) {
-    //     $("#hour9").addClass("future")
-    // } else {
-    //     $("#hour9").addClass("present")
-    // };
-
-    // if (10 < simpleTime) {
-    //     $("#hour10").addClass("past")
-    // } else if (10 > simpleTime) {
-    //     $("#hour10").addClass("future")
-    // } else {
-    //     $("#hour10").addClass("present")
-    // };
-
-    // if (11 < simpleTime) {
-    //     $("#hour11").addClass("past")
-    // } else if (11 > simpleTime) {
-    //     $("#hour11").addClass("future")
-    // } else {
-    //     $("#hour11").addClass("present")
-    // };
-
 }
-
-
 
 
 
@@ -82,17 +86,16 @@ $(".saveBtn").click(function () {
 
 
 
-// get local storage
-$("#hour9 .description").val(localStorage.getItem("hour9"));
-$("#hour10 .description").val(localStorage.getItem("hour10"));
-$("#hour11 .description").val(localStorage.getItem("hour11"));
+// get local storage when page is reloaded
+function setLS (){
+    $("#9 .description").val(localStorage.getItem("9"));
+    $("#10 .description").val(localStorage.getItem("10"));
+    $("#11 .description").val(localStorage.getItem("11"));
 
-
+}
 
 // clear local storage
-var clearStorage = $('.clear');
-
-clearStorage.on('click', function () {
+$("#clear").click(function () {
     localStorage.clear();
     location.reload();
 });

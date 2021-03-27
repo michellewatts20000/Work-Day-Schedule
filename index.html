@@ -16,38 +16,39 @@
 <body>
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p class="lead m-3">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
-    <button class="btn-primary btn clear">Clear Scheduler</button>
+    
   </header>
   <main class="container">
     <!-- Timeblocks go here -->
-    <section id="9" class="row time-block 9">
-      <div class="col-lg-1 hour">
+    <section id="9" class="row time-block">
+      <div class="col-md-1 hour">
         9AM
       </div>
-      <textarea class="col-lg-10 description">
+      <textarea class="col-md-10 description">
       </textarea>
-      <button id="clickEvent" class="btn saveBtn col-lg-1"><i class="fas fa-save"></i></button>
+      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </section>
-    <section id="10" class="row time-block 10">
-      <div class="col-lg-1 hour">
+    <section id="10" class="row time-block">
+      <div class="col-md-1 hour">
         10AM
       </div>
-      <textarea class="col-lg-10 description">
+      <textarea class="col-md-10 description">
       </textarea>
-      <button class="btn saveBtn col-lg-1"><i class="fas fa-save"></i></button>
+      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </section>
-    <section id="11" class="row time-block 11">
-      <div class="col-lg-1 hour">
+    <section id="11" class="row time-block">
+      <div class="col-md-1 hour">
         11AM
       </div>
-      <textarea class="col-lg-10 description">
+      <textarea class="col-md-10 description">
       </textarea>
-      <button class="btn saveBtn col-lg-1"><i class="fas fa-save"></i></button>
+      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </section>
-
-
+    <center>
+    <button id="clear" class="btn-primary btn m-5">Clear Scheduler</button>
+  </center>
     </div>
 
     
