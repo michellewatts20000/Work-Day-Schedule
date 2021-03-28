@@ -47,14 +47,14 @@ $(".saveBtn").click(function (event) {
     // Save text in local storage
     localStorage.setItem(time, text);
 
-    if (text === ""){
-        $('#exampleModal').modal('show');
-        
+    // show the modal if text has been entered to the textarea
+    if (text === "") {
+        $('#myModal').modal('show');
+
     } else {
-        $("#exampleModal").modal('hide');
+        $("#myModal").modal('hide');
         $(".modal-body").text(text);
     }
-
 });
 
 
