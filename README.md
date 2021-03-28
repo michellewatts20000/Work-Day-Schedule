@@ -4,6 +4,15 @@
 ### Link to the GitHub page is [here](https://michellewatts20000.github.io/Work-Day-Scheduler/)
 ### Link to the GitHub repo is [here](https://github.com/michellewatts20000/Work-Day-Scheduler)
 
+## What the app does
+Enter your workday schedule into this app. Once you have entered your task into the text field and click the save button your task will be saved to local storage.
+
+You will be notified that your task has been saved to local storage with a pop up. If you want to reset the scheduler click the clear scheduler button at the bottom.
+
+If the time is in the past the row will go grey. If the time is in the present the row will be red. Rows with future times will appear green. The app will check if colours are still correct every minute.
+
+The timer at the top tells you your current date.
+
   ## Screenshot
 ![screenshot of generator](./assets/img/screenshot.png)
 
@@ -15,20 +24,4 @@ I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively
 ```
 
-## Acceptance Criteria
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
