@@ -13,7 +13,7 @@ setLS();
 function time() {
     var currentTime = moment().format("dddd, MMMM Do, h:mm:ss a");
     $("#currentDay").text(currentTime);
-}
+};
 
 // checks every minute if colours need to change
 function colourUpdate() {
@@ -37,7 +37,7 @@ function colourUpdate() {
             $(this).addClass("future");
         }
     })
-}
+};
 
 // when saveBtn is clicked store the textarea value and also store its specific data attribute
 $(".saveBtn").click(function (event) {
@@ -46,7 +46,17 @@ $(".saveBtn").click(function (event) {
     var text = $(this).siblings(".description").val();
     // Save text in local storage
     localStorage.setItem(time, text);
+
+    if (text === ""){
+        $('#exampleModal').modal('show');
+        
+    } else {
+        $("#exampleModal").modal('hide');
+        $(".modal-body").text(text);
+    }
+
 });
+
 
 // get local storage when page is reloaded
 function setLS() {
@@ -59,7 +69,7 @@ function setLS() {
     $("[data='15'] .description").val(localStorage.getItem("15"));
     $("[data='16'] .description").val(localStorage.getItem("16"));
     $("[data='17'] .description").val(localStorage.getItem("17"));
-}
+};
 
 // clear local storage
 $("#clear").click(function () {

@@ -12,6 +12,12 @@ body {
   color: #ff6961;
 }
 
+::placeholder {
+  color: rgb(236, 236, 236);
+  font-size: 16px;
+
+}
+
 textarea {
   background: transparent;
   border: none;
@@ -19,6 +25,7 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  font-size: 16px;
 }
 
 .jumbotron {
@@ -42,6 +49,14 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display:block;
 }
 
 .hour {
