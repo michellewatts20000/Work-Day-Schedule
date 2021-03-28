@@ -1,4 +1,4 @@
-# Work-Day-Scheduler
+# Work Day Scheduler
 
 ## What the app does
 Enter your workday schedule into this app. Once you have entered your task into the text field and click the save button your task will be saved to local storage.
