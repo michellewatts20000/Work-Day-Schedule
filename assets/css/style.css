@@ -9,7 +9,7 @@ body {
 }
 
 #currentDay {
-  color:#ff6961;
+  color: #ff6961;
 }
 
 textarea {
@@ -81,9 +81,9 @@ textarea {
 
 
 @media screen and (max-width: 767px) {
-  
- .display-3{
-    font-size:40px;
+
+  .display-3 {
+    font-size: 40px;
   }
 
   .lead {
@@ -99,34 +99,34 @@ textarea {
   .saveBtn {
     border-radius: 0;
     height: 50px;
-    border:none;
+    border: none;
   }
 
   .hour {
     border-top: none;
     height: 50px;
-    padding-left:0;
+    padding-left: 0;
   }
 
   textarea {
-    border:none;
+    border: none;
   }
 
   .jumbotron {
-    border:none;
-    margin-bottom:0;
+    border: none;
+    margin-bottom: 0;
   }
 
   div .col-md-1 .hour {
-    padding-left:0;
+    padding-left: 0;
     margin-left: 0;
   }
 
 
   .fa-save {
 
-    margin-left:15px;
+    margin-left: 15px;
   }
-  
+
 
 }
