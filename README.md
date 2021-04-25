@@ -1,5 +1,12 @@
 # Work Day Scheduler
 
+## Links
+### Link to the GitHub page is [here](https://michellewatts20000.github.io/work-day-scheduler/)
+### Link to the GitHub repo is [here](https://github.com/michellewatts20000/work-day-scheduler)
+
+## Technologies used
+HTML, JavaScript, CSS, Bootstrap, JQuery, FontAwesome and Moment.
+
 ## What the app does
 Enter your workday schedule into this app. Once you have entered your task into the text field and click the save button your task will be saved to local storage.
 
@@ -10,19 +17,13 @@ If the time is in the past the row will go grey. If the time is in the present t
 The timer at the top tells you the current date and time and updates every second.
 
 
-## Links
-### Link to the GitHub page is [here](https://michellewatts20000.github.io/Work-Day-Scheduler/)
-### Link to the GitHub repo is [here](https://github.com/michellewatts20000/Work-Day-Scheduler)
-
   ## Screenshot
 ![screenshot of generator](./assets/img/screenshot.png)
+![screenshot of generator](./assets/img/screenshot2.png)
 
-## User Story
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
-
+## Contact
+Michelle Watts
+watts.e.michelle@gmail.com
 
