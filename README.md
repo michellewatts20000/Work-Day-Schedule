@@ -19,7 +19,7 @@ The timer at the top tells you the current date and time and updates every secon
 
   ## Screenshot
 ![screenshot of generator](./assets/img/screenshot.png)
-![screenshot of generator](./assets/img/screenshot2.png)
+![screenshot of generator](./assets/img/screenshot-2.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
